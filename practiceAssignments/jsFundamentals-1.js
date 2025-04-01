@@ -1,3 +1,9 @@
+//Hiding a button on click
+const button = document.getElementById("button");
+button.addEventListener("click", function () {
+  button.classList.add("hidden");
+});
+
 //Declaring Variables and logging it to the console
 let country = "Nepal";
 let language = "Nepali";
@@ -60,6 +66,7 @@ console.log(5 + 6 + "4" + 9 - 4 - 2); //1143
 //   console.log("No Borders!");
 // }
 
+/*
 //Logical Operators
 let isIsland = false;
 if (language === "English" && population < 50 && !isIsland) {
@@ -67,5 +74,33 @@ if (language === "English" && population < 50 && !isIsland) {
 } else {
   console.log(`${country} doesn't meet your criteria. :(`);
 }
+*/
 
-//Switch Statement
+//typeOf Operator
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof country);
+
+//Arithematic Operators
+console.log(2 ** 3); // 2 ** 3 -> 2 to the power 3
+
+//Assignment Operators
+let x = 10;
+x += x;
+console.log(x); // -> 20
+x -= x;
+console.log(x); // -> 0
+x = 20;
+x *= x;
+console.log(x); // -> 20 * 20 = 400
+x++;
+console.log(x); // -> x = x + 1 = 401
+x--;
+console.log(x); // -> x = x -1 = 400
+
+//Comparison Operators
+const birthYearSachit = 1990;
+const birthYearSaksham = 2002;
+let ageSachit = 2025 - birthYearSachit;
+let ageSaksham = 2025 - birthYearSaksham;
+console.log(ageSachit > ageSaksham);
